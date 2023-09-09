@@ -10,6 +10,7 @@ namespace Blog.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
+
         [HttpGet("v1/categories")]
         public async Task<IActionResult> GetAsync(
             [FromServices] BlogDataContext context)
@@ -24,6 +25,7 @@ namespace Blog.Controllers
                 return StatusCode(500, new ResultViewModel<List<Category>>("05X04 - Falha interna no servidor"));
             }
         }
+
 
         [HttpGet("v1/categories/{id:int}")]
         public async Task<IActionResult> GetByIdAsync(
@@ -46,6 +48,7 @@ namespace Blog.Controllers
                 return StatusCode(500, new ResultViewModel<Category>("Falha interna no servidor"));
             }
         }
+
 
         [HttpPost("v1/categories")]
         public async Task<IActionResult> PostAsync(
@@ -77,6 +80,7 @@ namespace Blog.Controllers
                 return StatusCode(500, new ResultViewModel<Category>("05X10 - Falha interna no servidor"));
             }
         }
+
 
         [HttpPut("v1/categories/{id:int}")]
         public async Task<IActionResult> PutAsync(
@@ -110,6 +114,7 @@ namespace Blog.Controllers
                 return StatusCode(500, new ResultViewModel<Category>("05X11 - Falha interna no servidor"));
             }
         }
+
 
         [HttpDelete("v1/categories/{id:int}")]
         public async Task<IActionResult> DeleteAsync(
