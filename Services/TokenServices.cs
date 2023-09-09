@@ -4,7 +4,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace Blog.Services
 {
-    public class TokenServices // Classe que vai gerar Token
+    public class TokenService // Classe que vai gerar Token
     {
         public string GenerateToken(User user)
         {

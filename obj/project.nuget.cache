@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gsrK5expjdhQSdOfVJLEaej/7xGspdmFTDW3Z1Ja9tqWZLiT+e5hCIX0sVhaHl9jBOnEnmVleUWqZNNj1zGntw==",
+  "dgSpecHash": "0Ig4bggCRcYCIKdk13sSUmMdz/zawx5s0wVtpMlE1aNYb/pscGJ9oJ6RIq45CTbWzxQzbhJoNGrV0JyltXslBQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\matheus.s.vaz\\OneDrive - Corporativo\\Área de Trabalho\\Estudos\\CURSO BALTA.IO\\API\\Blog\\Blog.csproj",
+  "projectFilePath": "C:\\Users\\matheus.s.vaz\\OneDrive - Corporativo\\Área de Trabalho\\Estudos\\CURSO BALTA.IO\\API\\Blog\\Blog.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\matheus.s.vaz\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\matheus.s.vaz\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
