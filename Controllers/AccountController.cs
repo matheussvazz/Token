@@ -4,6 +4,8 @@ using Blog.ViewModels;
 using Blog.Data;
 using Blog.Extensions;
 using Blog.Models;
+using SecureIdentity.Password;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace Blog.Controllers
@@ -27,7 +29,26 @@ namespace Blog.Controllers
                 Slug = model.Email.Replace("@", "-").Replace(".", "-")
             };
 
+            var password = PasswordGenerator.Generate(25); // Vai gerar uma senha
+            user.PasswordHash = PasswordHasher.Hash(password); // vai gerar um hash dessa senha
+
+            try
+            {
+                await context.Users.AddAsync(user);
+                await context.SaveChangesAsync();
+
+                return Ok(new ResultViewModel<dynamic>(new
+                {
+                    user = user.Email,
+                    password
+                }));
+            }
+            catch (DbUpdateException)
+            {
+                return StatusCode(400, new ResultViewModel<string>("05X99 - Este E-mail já está cadastrado"));
+            }
         }
+
 
         [HttpPost("v1/login")]
         public IActionResult Login([FromServices] TokenService tokenService) // dependem do item TokenService

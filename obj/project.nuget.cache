@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0Ig4bggCRcYCIKdk13sSUmMdz/zawx5s0wVtpMlE1aNYb/pscGJ9oJ6RIq45CTbWzxQzbhJoNGrV0JyltXslBQ==",
+  "dgSpecHash": "ZN/ac8ltQWEhxbA0PuHn3iNlLG4aSk08L2in5utuo5ICndBcpncGIDnRrEX7xi1DQVG5MVi8yBZalbXMxmFb6w==",
   "success": true,
   "projectFilePath": "C:\\Users\\matheus.s.vaz\\OneDrive - Corporativo\\Área de Trabalho\\Estudos\\CURSO BALTA.IO\\API\\Blog\\Blog.csproj",
   "expectedPackageFiles": [
@@ -60,6 +60,7 @@
     "C:\\Users\\matheus.s.vaz\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\matheus.s.vaz\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\matheus.s.vaz\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\matheus.s.vaz\\.nuget\\packages\\secureidentity\\1.0.4\\secureidentity.1.0.4.nupkg.sha512",
     "C:\\Users\\matheus.s.vaz\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\matheus.s.vaz\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\matheus.s.vaz\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",
