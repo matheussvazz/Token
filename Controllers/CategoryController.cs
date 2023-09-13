@@ -52,7 +52,7 @@ namespace Blog.Controllers
 
         [HttpPost("v1/categories")]
         public async Task<IActionResult> PostAsync(
-            [FromBody] EditorCategoryViewModel model,
+            [FromBody] ResultViewModel model,
             [FromServices] BlogDataContext context)
         {
             if (!ModelState.IsValid)
@@ -79,6 +79,7 @@ namespace Blog.Controllers
             {
                 return StatusCode(500, new ResultViewModel<Category>("05X10 - Falha interna no servidor"));
             }
+
         }
 
 
